@@ -1,0 +1,43 @@
+.ai-setting {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.ai-setting h2 {
+  margin-bottom: 20px;
+    color: #229799;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+    color: #424242;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: #48CFCB;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #229799;
+}

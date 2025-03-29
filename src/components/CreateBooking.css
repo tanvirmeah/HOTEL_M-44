@@ -1,0 +1,171 @@
+.create-booking {
+    width: 100%;
+  }
+
+  .create-booking h2 {
+    color: #229799;
+    margin-bottom: 20px;
+  }
+
+  .create-booking label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .create-booking input[type="text"],
+  .create-booking input[type="email"],
+  .create-booking input[type="tel"],
+  .create-booking input[type="number"],
+  .create-booking input[type="date"],
+  .create-booking select
+  {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .create-booking button {
+      background-color: #1a5bfb; /* Updated color */
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+  }
+
+  /* Enabled button hover */
+  .create-booking button:hover {
+    background-color: #1341b3; /* Darker shade on hover */
+  }
+
+  /* Disabled button styles */
+  .create-booking button:disabled {
+    background-color: #cccccc; /* Grayed-out background */
+    color: #666666;       /* Darker gray text */
+    cursor: not-allowed;  /* Change cursor to indicate not clickable */
+  }
+
+  /* Remove hover effect for disabled button */
+  .create-booking button:disabled:hover {
+      background-color: #cccccc; /* Keep the same gray background on hover */
+  }
+
+  .room-booking {
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin-bottom: 10px;
+  }
+
+  .extras-section {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid #eee;
+  }
+
+  .payment-section {
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      padding: 10px;
+  }
+
+  .info-text {
+      font-size: 0.9em;
+      color: #777;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+  }
+
+  .payment-section.advance-payment {
+      background-color: #ecfbf6;
+  }
+
+  .payment-section.total-received {
+      background-color: #fff6f2;
+      margin-top: 20px; /* Add margin here */
+  }
+
+  .create-booking .step3 .total-amount {
+      color: #1dbf73;
+      font-weight: bold;
+      margin-bottom: 5px;
+  }
+  .create-booking .step3 .total-due {
+      color: #ff6a6a;
+      font-weight: bold;
+  }
+
+  /* step 4 */
+  .create-booking .step4 .guest-info {
+    color: #424242; /* Set guest info text color to dark gray */
+    margin-bottom: 2px;
+  }
+  .create-booking .step4 .total-amount {
+      color: #1dbf73;
+      font-weight: bold;
+  }
+  .create-booking .step4 .total-due {
+      color: #ff6a6a;
+      font-weight: bold;
+  }
+
+  /* Style for buttons from Step 2 onwards */
+  .create-booking .step-buttons button {
+        background-color: #1a5bfb;
+  }
+  .create-booking .step-buttons button:hover{
+    background-color: #1341b3;
+  }
+
+  .create-booking .step-buttons button:disabled {
+    background-color: #cccccc; /* Grayed-out background */
+    color: #666666;       /* Darker gray text */
+    cursor: not-allowed;  /* Change cursor to indicate not clickable */
+  }
+  .create-booking .step-buttons button:disabled:hover {
+      background-color: #cccccc;
+  }
+
+  /* Styling for the status indicators */
+  .create-booking .status-indicators {
+      margin-top: 10px;
+      margin-bottom: 15px;
+  }
+  .create-booking .status-indicators button{
+      margin-right: 1rem;
+      background-color: #fff;
+      color: #000;
+      border: 1px solid #ddd;
+  }
+
+  /* Remove Room button styling */
+  .create-booking .room-booking button {
+      background-color: #f44336;
+  }
+  .create-booking .room-booking button:hover{
+      background-color: #ff3333;
+  }
+
+  .input-group {
+      display: flex;
+      gap: 20px;
+      width: 100%;
+  }
+
+  .input-group > div {
+      flex: 1;
+  }
+  .manager-acknowledgement{
+      margin-bottom: 1rem;
+  }
+
+    .manager-acknowledgement label{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }

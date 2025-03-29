@@ -1,0 +1,26 @@
+.messages {
+  width: 100%;
+}
+
+.messages h2 {
+  margin-bottom: 20px;
+    color: #229799;
+}
+
+.message {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.message h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+    color: #424242;
+}
+
+.message p {
+  margin: 5px 0;
+    color: #424242;
+}

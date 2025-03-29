@@ -1,0 +1,124 @@
+.booking-summary {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-family: 'Lexend', sans-serif;
+    max-width: 800px; /* Or whatever width you prefer */
+    margin: 20px auto;
+}
+
+.booking-summary header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #1a5bfb; /* Dark teal border */
+    padding-bottom: 10px;
+}
+
+.hotel-info h1 {
+    margin: 0;
+    color: #1a5bfb;
+    font-size: 1.8em;
+}
+.hotel-info p{
+    color: #424242
+}
+
+.reservation-id {
+    font-weight: bold;
+    color: #424242;
+}
+
+.summary-section {
+    margin-bottom: 20px;
+    color: #424242;
+}
+
+.summary-section h3 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    color: #1a5bfb;
+    font-size: 1.2em;
+}
+
+.summary-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.summary-table th,
+.summary-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.summary-table th {
+    background-color: #f0f0f0;
+}
+
+.summary-table td:last-child,
+.summary-table th:last-child {
+    text-align: right;
+}
+
+.total-section {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #424242
+}
+.total-due{
+    color: #ff6a6a;
+    font-size: 1.5rem;
+}
+.total-amount{
+    color: #1dbf73;
+    font-size: 1.5rem;
+}
+.print-button {
+    background-color: #1a5bfb;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.print-button:hover {
+    background-color: #0056b3;
+}
+
+/* Print Styles */
+@media print {
+    .booking-summary {
+        box-shadow: none; /* Remove box-shadow for printing */
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        max-width: none;
+        border: none;
+    }
+    .booking-summary button{
+        display: none;
+    }
+    .booking-summary header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #1a5bfb; /* Dark teal border */
+        padding-bottom: 10px;
+    }
+
+    /* You might need to adjust other styles for printing,
+       like hiding navigation elements, etc. */
+    .sidebar, header, .step-buttons, .search-container, .pagination, .icon, .add-item-button {
+        display: none !important;
+    }
+}

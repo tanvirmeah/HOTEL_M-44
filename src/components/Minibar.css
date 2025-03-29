@@ -1,0 +1,244 @@
+.minibar {
+  width: 100%;
+}
+
+.minibar h2, .minibar h3 {
+  color: #229799;
+  margin-bottom: 1rem;
+}
+
+/* Add Item Button */
+.add-item-button {
+    background-color: #48CFCB;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.add-item-button:hover {
+    background-color: #229799;
+}
+
+  /* Popup Styles */
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's on top */
+  }
+
+  .popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px; /* Limit width on large screens */
+      width: 90%;
+    text-align: center;
+      position: relative;
+  }
+  .popup-content p{
+      color: #424242
+  }
+  .popup-content button {
+      margin: 0.5rem;
+  }
+  .popup-content label{
+      display: block;
+      margin-top: 10px;
+      text-align: left;
+  }
+
+/* Form Styling */
+  .add-item-form {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+      gap: 10px;
+      margin-bottom: 1rem;
+      align-items: center; /* Vertically align items */
+  }
+
+.add-item-form input[type="text"],
+.add-item-form select,
+.add-item-form input[type="number"] {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%; /* Make inputs fill their container */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.add-item-form button {
+  background-color: #48CFCB;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%; /* Make button fill its container */
+  box-sizing: border-box;
+}
+
+.add-item-form button:hover {
+  background-color: #229799;
+}
+.popup-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Table Styling */
+.table-container {
+    overflow-x: auto; /* Horizontal scroll on small screens */
+}
+.minibar table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.minibar th,
+.minibar td {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.minibar th {
+  background-color: #f0f0f0;
+}
+
+.minibar tr:nth-child(even) {
+  background-color: #f9f9f9; /* Zebra striping for better readability */
+}
+.minibar tr:hover {
+    background-color: #f0f0f0;
+}
+
+/* Edit and Delete Button Styling */
+.minibar td button {
+  background-color: #f44336;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 5px; /* Space between buttons */
+}
+.minibar td button:first-child{
+    background-color: #48CFCB;
+}
+.minibar td button:hover:first-child{
+    background-color: #229799;
+}
+
+.minibar td button:hover {
+  background-color: #ff0000;
+}
+.minibar input{
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.minibar select{
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.minibar label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #888;
+  }
+  .close-button:hover {
+    color: #333;
+  }
+
+    .revenue-cards-container{
+        width: 100%;
+        overflow-x: auto;
+    }
+  .revenue-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+}
+
+.revenue-card {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 10px; /* Reduced padding */
+    border-radius: 5px;
+    text-align: center;
+    width: 48%;       /* Adjusted width */
+    min-width: 150px; /* Minimum width for smaller screens */
+    box-sizing: border-box; /* Include padding and border in width */
+    margin-bottom: 10px;
+}
+
+.revenue-card h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 1.1em; /* Slightly smaller font size */
+}
+
+.revenue-card p {
+    font-size: 1.4em; /* Slightly smaller font size */
+    font-weight: bold;
+    color: #1a5bfb;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .revenue-cards {
+        flex-direction: column; /* Stack cards vertically on small screens */
+    }
+    .revenue-card {
+        width: 100%; /* Full width on small screens */
+        margin-bottom: 10px;
+    }
+}
+
+.month-selector {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.month-selector label {
+    margin-right: 5px;
+}
+.month-selector select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}

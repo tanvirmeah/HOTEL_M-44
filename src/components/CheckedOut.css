@@ -1,0 +1,54 @@
+.checked-out-bookings {
+  width: 100%;
+}
+
+.checked-out-bookings h2 {
+  margin-bottom: 20px;
+  color: #229799;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: #424242;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+.search-container {
+  float: right;
+  margin-bottom: 1rem;
+}
+
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  background-color: #1a5bfb;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.pagination button:hover {
+  background-color: #1341b3;
+}
+
+.pagination button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}

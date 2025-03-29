@@ -1,0 +1,41 @@
+.calendar {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.calendar h2 {
+    color: #229799;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 1px;
+  background-color: #ddd;
+  border: 1px solid #ddd;
+}
+
+.day-header {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #f0f0f0;
+    color: #424242;
+}
+
+.day {
+  padding: 10px;
+  background-color: white;
+  min-height: 80px;
+  border: 1px solid #ddd;
+}
+
+.booking {
+  background-color: #48CFCB;
+  color: white;
+  padding: 2px 5px;
+  margin-top: 2px;
+  font-size: 0.8em;
+  border-radius: 3px;
+}

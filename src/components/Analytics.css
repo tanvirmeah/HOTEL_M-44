@@ -1,0 +1,83 @@
+.analytics {
+    width: 100%;
+  }
+  
+  .analytics h2 {
+    margin-bottom: 20px;
+    color: #229799;
+  }
+  
+  .metric {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+  
+  .metric h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #424242;
+  }
+  
+  .metric p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #229799;
+  }
+
+    /* Revenue Cards */
+    .revenue-cards {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+    }
+
+    .revenue-card {
+        background-color: #f0f0f0;
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+        width: 30%;
+        min-width: 200px;
+        box-sizing: border-box;
+    }
+
+    .revenue-card h3 {
+        margin-top: 0;
+        color: #333;
+    }
+
+    .revenue-card p {
+        font-size: 24px;
+        font-weight: bold;
+        color: #229799;
+    }
+    .month-selector {
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .month-selector label {
+        margin-right: 5px;
+    }
+    .month-selector select {
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .revenue-cards {
+            flex-direction: column; /* Stack cards vertically on small screens */
+        }
+        .revenue-card {
+            width: 100%; /* Full width on small screens */
+            margin-bottom: 10px;
+        }
+    }
